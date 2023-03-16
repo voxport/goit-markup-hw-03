@@ -215,7 +215,7 @@ address {
 }
 
 .approach__item {
-  width: calc(100% - 30px / 4);
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .approach__subtitle {
