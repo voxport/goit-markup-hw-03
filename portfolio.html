@@ -11,7 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet" />
 
-    <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+
+  <link rel="stylesheet" href="./css/styles.css" />
 
   <title>Portfolio</title>
 </head>
@@ -21,164 +23,189 @@
   <header class="header">
     <div class="container header__wrapper">
 
-    <!-- Блок навигации -->
-    <nav class="header__navigation">
-      <a class="header__navigation-logo link" href="./index.html">Web<span class="header__logo-span">Studio</span></a>
+      <!-- Блок навигации -->
+      <nav class="header__navigation">
+        <a class="header__navigation-logo link" href="./index.html">Web<span class="header__logo-span">Studio</span></a>
 
-      <ul class="header__navigation-list">
-        <li class="header__nav-item">
-          <a class="header__nav-link link" href="./index.html">Studio</a>
-        </li>
+        <ul class="header__navigation-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link link" href="./index.html">Studio</a>
+          </li>
 
-        <li class="header__nav-item">
-          <a class="header__nav-link link" href="./portfolio.html">Portfolio</a>
-        </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link link" href="./portfolio.html">Portfolio</a>
+          </li>
 
-        <li class="header__nav-item">
-          <a class="header__nav-link link" href="">Contacts</a>
-        </li>
-      </ul>
-    </nav>
+          <li class="header__nav-item">
+            <a class="header__nav-link link" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
 
-    <!-- Блок контактной информации -->
-    <address class="header__address">
-      <ul class="header__contact-list list">
-        <li class="header__contact-item">
-          <a class="header__contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
+      <!-- Блок контактной информации -->
+      <address class="header__address">
+        <ul class="header__contact-list list">
+          <li class="header__contact-item">
+            <a class="header__contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
 
-        <li class="header__contact-item">
-          <a class="header__contact-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-        </li>
-      </ul>
-    </address>
+          <li class="header__contact-item">
+            <a class="header__contact-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+      </address>
     </div>
   </header>
 
   <!-- Здесь размещается весь контент страницы -->
   <main>
-    <section class="portfolio">
-      <h1 class="portfolio__title">Our Portfolio</h1>
+    <section class="section portfolio">
+      <div class="container">
+        <h1 class="portfolio__title visually-hidden ">Our Portfolio</h1>
 
-      <!-- Блок кнопок фильтра -->
-      <ul class="portfolio__button-list list">
-        <li class="portfolio__button-item">
-          <button class="portfolio__button" type="button">All</button>
-        </li>
+        <!-- Блок кнопок фильтра -->
+        <ul class="portfolio__button-list">
+          <li class="portfolio__button-item">
+            <button class="portfolio__button" type="button">All</button>
+          </li>
 
-        <li class="portfolio__button-item">
-          <button class="portfolio__button" type="button">Web Site</button>
-        </li>
+          <li class="portfolio__button-item">
+            <button class="portfolio__button" type="button">Web Site</button>
+          </li>
 
-        <li class="portfolio__button-item">
-          <button class="portfolio__button" type="button">App</button>
-        </li>
+          <li class="portfolio__button-item">
+            <button class="portfolio__button" type="button">App</button>
+          </li>
 
-        <li class="portfolio__button-item">
-          <button class="portfolio__button" type="button">Design</button>
-        </li>
+          <li class="portfolio__button-item">
+            <button class="portfolio__button" type="button">Design</button>
+          </li>
 
-        <li class="portfolio__button-item">
-          <button class="portfolio__button" type="button">Marketing</button>
-        </li>
-      </ul>
+          <li class="portfolio__button-item">
+            <button class="portfolio__button" type="button">Marketing</button>
+          </li>
+        </ul>
 
-      <!-- Блок карточек товаров и проедложений  -->
-      <ul class="portfolio__card-list list">
-        <li class="portfolio__card-item">
-          <a class="portfolio__card-wrapper-link link" href="">
-            <img class="portfolio__card-img" src="./images/portfolio/portfolio01.jpg" alt="product-01" width="360"
-              height="300" />
+        <!-- Блок карточек товаров и проедложений  -->
+        <ul class="portfolio__card-list">
+          <li class="portfolio__card-item">
+            <a class="portfolio__card-wrapper-link link" href="">
+              <img class="portfolio__card-img" src="./images/portfolio/portfolio01.jpg" alt="product-01" width="360"
+                height="300" />
 
-            <h2 class="portfolio__product-title">
-              Banking App Interface Concept
-            </h2>
-            <p class="portfolio__product-description">App</p>
-          </a>
-        </li>
+              <div class="portfolio__desription-wrapper">
+                <h2 class="portfolio__product-title">
+                  Banking App Interface Concept
+                </h2>
+                <p class="portfolio__product-description">App</p>
+              </div>
 
-        <li class="portfolio__card-item">
-          <a class="portfolio__card-wrapper-link link" href="">
-            <img class="portfolio__card-img" src="./images/portfolio/portfolio02.jpg" alt="product-02" width="360"
-              height="300" />
+            </a>
+          </li>
 
-            <h2 class="portfolio__product-title">Cashless Payment</h2>
-            <p class="portfolio__product-description">Marketing</p>
-          </a>
-        </li>
+          <li class="portfolio__card-item">
+            <a class="portfolio__card-wrapper-link link" href="">
+              <img class="portfolio__card-img" src="./images/portfolio/portfolio02.jpg" alt="product-02" width="360"
+                height="300" />
 
-        <li class="portfolio__card-item">
-          <a class="portfolio__card-wrapper-link link" href="">
-            <img class="portfolio__card-img" src="./images/portfolio/portfolio03.jpg" alt="product-03" width="360"
-              height="300" />
+              <div class="portfolio__desription-wrapper">
+                <h2 class="portfolio__product-title">Cashless Payment</h2>
+                <p class="portfolio__product-description">Marketing</p>
+              </div>
 
-            <h2 class="portfolio__product-title">Meditation App</h2>
-            <p class="portfolio__product-description">App</p>
-          </a>
-        </li>
 
-        <li class="portfolio__card-item">
-          <a class="portfolio__card-wrapper-link link" href="">
-            <img class="portfolio__card-img" src="./images/portfolio/portfolio04.jpg" alt="product-04" width="360"
-              height="300" />
+            </a>
+          </li>
 
-            <h2 class="portfolio__product-title">Taxi Service</h2>
-            <p class="portfolio__product-description">Marketing</p>
-          </a>
-        </li>
+          <li class="portfolio__card-item">
+            <a class="portfolio__card-wrapper-link link" href="">
+              <img class="portfolio__card-img" src="./images/portfolio/portfolio03.jpg" alt="product-03" width="360"
+                height="300" />
 
-        <li class="portfolio__card-item">
-          <a class="portfolio__card-wrapper-link link" href="">
-            <img class="portfolio__card-img" src="./images/portfolio/portfolio05.jpg" alt="product-05" width="360"
-              height="300" />
+              <div class="portfolio__desription-wrapper">
+                <h2 class="portfolio__product-title">Meditation App</h2>
+                <p class="portfolio__product-description">App</p>
+              </div>
 
-            <h2 class="portfolio__product-title">Screen Illustrations</h2>
-            <p class="portfolio__product-description">Design</p>
-          </a>
-        </li>
 
-        <li class="portfolio__card-item">
-          <a class="portfolio__card-wrapper-link link" href="">
-            <img class="portfolio__card-img" src="./images/portfolio/portfolio06.jpg" alt="product-06" width="360"
-              height="300" />
+            </a>
+          </li>
 
-            <h2 class="portfolio__product-title">Online Courses</h2>
-            <p class="portfolio__product-description">Marketing</p>
-          </a>
-        </li>
+          <li class="portfolio__card-item">
+            <a class="portfolio__card-wrapper-link link" href="">
+              <img class="portfolio__card-img" src="./images/portfolio/portfolio04.jpg" alt="product-04" width="360"
+                height="300" />
 
-        <li class="portfolio__card-item">
-          <a class="portfolio__card-wrapper-link link" href="">
-            <img class="portfolio__card-img" src="./images/portfolio/portfolio07.jpg" alt="product-07" width="360"
-              height="300" />
 
-            <h2 class="portfolio__product-title">
-              Instagram Stories Concept
-            </h2>
-            <p class="portfolio__product-description">Design</p>
-          </a>
-        </li>
+              <div class="portfolio__desription-wrapper">
+                <h2 class="portfolio__product-title">Taxi Service</h2>
+                <p class="portfolio__product-description">Marketing</p>
+              </div>
+            </a>
+          </li>
 
-        <li class="portfolio__card-item">
-          <a class="portfolio__card-wrapper-link link" href="">
-            <img class="portfolio__card-img" src="./images/portfolio/portfolio08.jpg" alt="product-08" width="360"
-              height="300" />
+          <li class="portfolio__card-item">
+            <a class="portfolio__card-wrapper-link link" href="">
+              <img class="portfolio__card-img" src="./images/portfolio/portfolio05.jpg" alt="product-05" width="360"
+                height="300" />
 
-            <h2 class="portfolio__product-title">Organic Food</h2>
-            <p class="portfolio__product-description">Web Site</p>
-          </a>
-        </li>
+              <div class="portfolio__desription-wrapper">
+                <h2 class="portfolio__product-title">Screen Illustrations</h2>
+                <p class="portfolio__product-description">Design</p>
+              </div>
+            </a>
+          </li>
 
-        <li class="portfolio__card-item">
-          <a class="portfolio__card-wrapper-link link" href="">
-            <img class="portfolio__card-img" src="./images/portfolio/portfolio09.jpg" alt="product-09" width="360"
-              height="300" />
+          <li class="portfolio__card-item">
+            <a class="portfolio__card-wrapper-link link" href="">
+              <img class="portfolio__card-img" src="./images/portfolio/portfolio06.jpg" alt="product-06" width="360"
+                height="300" />
 
-            <h2 class="portfolio__product-title">Fresh Coffee</h2>
-            <p class="portfolio__product-description">Web Site</p>
-          </a>
-        </li>
-      </ul>
+              <div class="portfolio__desription-wrapper">
+                <h2 class="portfolio__product-title">Online Courses</h2>
+                <p class="portfolio__product-description">Marketing</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio__card-item">
+            <a class="portfolio__card-wrapper-link link" href="">
+              <img class="portfolio__card-img" src="./images/portfolio/portfolio07.jpg" alt="product-07" width="360"
+                height="300" />
+
+              <div class="portfolio__desription-wrapper">
+                <h2 class="portfolio__product-title">Instagram Stories Concept</h2>
+                <p class="portfolio__product-description">Design</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio__card-item">
+            <a class="portfolio__card-wrapper-link link" href="">
+              <img class="portfolio__card-img" src="./images/portfolio/portfolio08.jpg" alt="product-08" width="360"
+                height="300" />
+
+              <div class="portfolio__desription-wrapper">
+                <h2 class="portfolio__product-title">Organic Food</h2>
+                <p class="portfolio__product-description">Web Site</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio__card-item">
+            <a class="portfolio__card-wrapper-link link" href="">
+              <img class="portfolio__card-img" src="./images/portfolio/portfolio09.jpg" alt="product-09" width="360"
+                height="300" />
+
+              <div class="portfolio__desription-wrapper">
+                <h2 class="portfolio__product-title">Fresh Coffee</h2>
+                <p class="portfolio__product-description">Web Site</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
     </section>
   </main>
 
